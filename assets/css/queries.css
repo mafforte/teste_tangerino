@@ -1,0 +1,46 @@
+@media screen and (max-width: 1450px){
+    .resumo_diario {
+        grid-template-columns: 1fr;
+    }
+    .info_total_diario {
+        display: grid;
+        grid-auto-flow: column;
+    }
+    .info_total_diario p {
+        justify-self: center;
+        margin: 1em 0;
+    }
+}
+
+@media screen and (max-width: 1250px){
+    .container {
+        width: 90vw;
+    }
+    .graficos_diarios {
+        display: none;
+    }
+    .cards_controle_diario {
+        grid-template-columns: 1fr;
+        grid-gap: 4em;
+    }
+    
+}
+
+@media screen and (max-width: 900px){
+    
+    .resumo {
+        display: none;
+    }
+    .grid_cards_home, .cards_controle_mensal  {
+        grid-template-columns: 1fr;
+    }
+    .grid_cards_plataformas {
+        grid-auto-flow: row;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .conteudo_header ul {
+        display: none;
+    }
+}

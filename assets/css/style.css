@@ -1,0 +1,405 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    background: #121212;
+    color: #fff;
+}
+
+header {
+    background: #202020;
+    padding: 2em 0;
+}
+.conteudo_header {
+    display: grid;
+    grid-auto-flow: column;
+    width: 80vw;
+    margin: 0 auto;
+    align-items: center;
+}
+.logo {
+    justify-self: start;
+}
+.logo img {
+    width: 200px;
+}
+
+.conteudo_header ul {
+    display: flex;
+}
+.conteudo_header li {
+    margin: 0 1em;
+}
+.conteudo_header li a {
+    color: #fff;
+}
+
+.info_header {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 2em;
+    justify-self: end;
+    align-items: center;
+}
+.user {
+    background: #eb6022;
+    border-radius: 100%;
+    padding: .8em 1em;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.3em;
+}
+
+
+.container {
+    width: 80vw;
+    margin: 3em auto;
+}
+
+.welcome p {
+    color: #8b8b8b;
+    width: 70vw;
+    margin: 0 auto;
+}
+.welcome span {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.resumo {
+    border-radius: 15px;
+    background: #151517;
+    width: 70vw;
+    margin: 3em auto 0 auto;
+}
+.grid_resumo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    padding: 2em;
+}
+
+.mensagem_resumo {
+    align-self: center;
+    width: 80%;
+    margin: 0 auto;
+    border-right: 1px solid #fff;
+}
+.mensagem_resumo p {
+    font-size: 1.7em;
+}
+.btn_laranja {
+    display: block;
+    background: #eb6022;
+    color: #fff;
+    font-weight: 700;
+    padding: .5em 2em;
+    border-radius: 10px;
+    width: 100px;
+    text-align: center;
+    margin-top: 2em;
+}
+
+.graficos_resumo {
+    display: flex;
+}
+.graficos_resumo img {
+    margin: 0 2em;
+    object-fit: contain;
+}
+
+.cards_home {
+    width: 70vw;
+    margin: 3em auto;
+}
+.grid_cards_home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2em;
+}
+
+.item_cards {
+    border-radius: 15px;
+    background: #151517;
+}
+
+.conteudo_item_card {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-gap: 2em;
+}
+.icon_card_home {
+    background-color: #eb6022;
+    background-repeat:  no-repeat;
+    background-position: center center;
+    border-radius: 15px;
+    margin: -1em 0 0 2em;
+    height: 8em;
+    width: 8em
+}
+.card_diario {
+    background-image: url('../../assets/img/icone-calendario-dia.png');
+}
+.card_mensal {
+    background-image: url('../../assets/img/icone-calendario-mes.png');
+}
+.txt_card_home {
+    padding: 2em 0;
+    justify-self: center;
+}
+.txt_card_home h3 {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.txt_card_home ul {
+    margin-top: 1em;
+}
+.txt_card_home li {
+    margin: .5em 0;
+}
+
+.links_cards {
+    display: grid;
+    grid-auto-flow: column;
+    border-top: solid 5px #121214;
+    padding: 1em 0;
+}
+.links_cards a {
+    color: #fff;
+    justify-self: center;
+}
+
+
+/************************* INTERNAS *************************/
+
+.item_card {
+    border-radius: 15px;
+    background: #202024;
+    padding: 2em;
+}
+.item_card ul {
+    margin-top: 2em;
+}
+.item_card li {
+    margin: 1em 0;
+    padding-bottom: 1em;
+    border-bottom: solid 2px #121214;
+    font-size: 1.3em;
+    display: flex;
+}
+.item_card li:last-child {
+    border: none;
+    padding-bottom: 0;
+}
+.item_card h2 {
+    border-radius: 15px;
+    background: #eb6022;
+    color: #fff;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    padding: 1em 0 1em 1em;
+    font-weight: 700;
+    margin-top: -3em;
+}
+
+
+
+/************************* CONTROLE DIÁRIO *************************/
+
+
+.resumo_diario {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-gap: 4em;
+    align-items: center;
+}
+.graficos_diarios {
+    display: grid;
+    grid-auto-flow: column;
+    border-radius: 15px;
+    background: #151517;
+    padding: 2em;
+}
+.graficos_diarios img {
+    margin: 0 2em;
+    justify-self: center;
+    object-fit: contain;
+}
+.info_total_diario {
+    font-size: 1.4em;
+}
+.info_total_diario p {
+    margin: 2em 0;
+    text-align: right;
+}
+.info_total_diario span {
+    color:#eb6022;
+    background: #202024;
+    border-radius: 5px;
+    padding: .2em .5em;
+    margin-left: 1em;
+    font-weight: 700;
+}
+
+
+.cards_controle_diario {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2em;
+    margin-top: 4em;
+}
+
+.status_diario ul {
+    margin-top: 4em;
+}
+.status_diario li {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    margin: 2em 0;
+    padding-bottom: 2em;
+}
+.status_diario p {
+    padding-left: 2em;
+}
+.status_diario span {
+    display: block;
+    font-weight: 700;
+    color: #eb6022;
+    margin-left: 2em;
+    font-size: 1.2em;
+}
+
+
+.horas_extra li, .atrasos_faltas li {
+    justify-content: center;
+}
+
+
+.info_user {
+    display: flex;
+    align-items: center;
+    font-size: .9em;
+}
+.info_user h4 {
+    font-weight: 700;
+    margin-bottom: .5em;
+}
+.nome_user {
+    margin: 0 1em;
+    border-right: solid 1px #fff;
+    padding-right: 1em;
+}
+.result_hora_extra p {
+    background: #151517;
+    color: #eb6022;
+    border-radius: 15px;
+    padding: 1em .5em;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+.result_atrasos_faltas {
+    display: grid;
+}
+.result_atrasos_faltas p {
+    font-size: .8em;
+    margin: .5em 0;
+}
+.result_atrasos_faltas span {
+    font-weight: 700;
+    color: #eb6022;
+}
+
+
+/************************* CONTROLE MENSAL *************************/
+
+
+.cards_controle_mensal {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3em;
+}
+.cards_controle_mensal .item_card h2 {
+    margin: 0;
+}
+
+.cards_controle_mensal .item_card {
+    padding: 0;
+}
+.cards_controle_mensal .item_card li {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    width: 100%;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+.cards_controle_mensal .item_card p {
+    align-self: center;
+}
+.cards_controle_mensal .item_card span {
+    align-self: center;
+    color: #eb6022;
+    background: #151517;
+    width: 2em;
+    padding: .5em 0;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+
+.cards_plataformas h3 {
+    font-size: 2em;
+    margin: 2em 0;
+}
+.grid_cards_plataformas {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 3em;
+}
+.item_cards_plataforma {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    border-radius: 15px;
+    background-color: #151517;
+    background-repeat: no-repeat;
+    background-position: 2% 0;
+}
+.item_cards_plataforma h4 {
+    font-weight: 700;
+    padding: 1em;
+    font-size: 2em;
+}
+.result_cards_plataforma {
+    display: grid;
+    grid-gap: 0;
+    background: #eb6022;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    color: #121214;
+}
+.result_cards_plataforma p {
+    font-size: 3em;
+    font-weight: 700;
+    text-align: center;
+    align-self: end;
+}
+.result_cards_plataforma span {
+    font-size: .8em;
+    text-align: center;
+}
+
+.windows {
+    background-image: url('../../assets/img/windows.png');
+    background-size: 23%;
+}
+.linux {
+    background-image: url('../../assets/img/linux.png');
+    background-size: 22%;
+    
+}
+.macos {
+    background-image: url('../../assets/img/macos.png');
+    background-size: 20%;
+}
